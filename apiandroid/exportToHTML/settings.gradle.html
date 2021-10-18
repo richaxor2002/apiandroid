@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>settings.gradle</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000;}
+.s1 { color: #808080; font-style: italic;}
+.s2 { color: #008000; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+settings.gradle</font>
+</center></td></tr></table>
+<pre>dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() <span class="s1">// Warning: this repository is going to shut down soon</span>
+    }
+}
+rootProject.name = <span class="s2">&quot;apiandroid&quot;</span>
+include <span class="s2">':app'</span>
+</pre>
+</body>
+</html>
